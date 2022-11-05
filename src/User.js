@@ -13,7 +13,7 @@ class User{
 
 class Tutor extends User{
     constructor(username, password){
-        super(username, password);
+        super(username, password);3
         this._location = "";
         this._rating = 0;
         this._subjects = [];
@@ -62,8 +62,41 @@ class Tutor extends User{
     }
 }
 
-const k = new Tutor('Kel', '123456');
-k.setlocation('Toronto');
-let location = k.getlocation;
-console.log(k._location);
+class Student extends User {
+    constructor(username, password) {
+        super(username, password);
+        this._price = 0;
+        this._subject = " ";
+        this._location = " ";
+    }
+    getusername() {
+        return this._username;
+    }
+
+    getprice() {
+        return this._price;
+    }
+
+    setprice(price) {
+        this._price = price;
+    }
+
+    getsubject() {
+        return this._subject;
+    }
+
+    setsubject (subject) {
+        this._subject = subject;
+    }
+
+    getlocation() {
+        return this._location;
+    }
+
+    setlocation (location) {
+        this._location = location;
+    }
+
+    }
+
 
