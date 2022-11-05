@@ -16,7 +16,7 @@ class Tutor extends User{
         super(username, password);3
         this._location = "";
         this._rating = 0;
-        this._subjects = [];
+        this._subjects = new Map();
         this._openToWork = true;
         this._contact = "";
     }
