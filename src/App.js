@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Footer from "./Components/Footer";
 import SignIn from "./Components/SignIn"; 
@@ -9,6 +8,7 @@ import SignUp from './Components/SignUp';
 function App() {
   return (
     <Router>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<SignIn />} />
         <Route path="/SignUp" element={<SignUp />} />
